@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1536px;
+  max-height: 707.2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main {
+  height: 90%;
+  width: 90%;
+  background-color: rgb(218, 93, 118);
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.maintop {
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.column h3 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.column .box {
+  font-size: 24px;
+  padding: 12px 24px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.mainbottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100%-140px);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bubble-box {
+  font-size: 24px;
+  padding: 12px 24px;
+  background-color: rgb(144, 39, 39);
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.bubble-box:hover {
+  background-color: cadetblue;
+}
+
+.game-over{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: crimson;
+    color: #fff;
+    z-index: 999;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  .main {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+}
