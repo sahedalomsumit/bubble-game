@@ -105,4 +105,7 @@ body {
     height: auto;
     border-radius: 0px;
   }
+  #main-wrapper{
+    max-height:100%;
+  }
 }
