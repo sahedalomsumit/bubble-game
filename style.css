@@ -69,3 +69,9 @@ body {
 .bubble-box:hover{
     background-color: cadetblue;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+}
