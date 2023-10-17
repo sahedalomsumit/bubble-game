@@ -13,6 +13,16 @@ function hitFunction() {
   let newHitPrint = document.querySelector("#hit");
   newHitPrint.textContent = newHit;
 }
+function gameOver() {
+  let mainWrapper = document.querySelector("#main-wrapper");
+  mainWrapper.innerHTML = `<div class="game-over">
+  Game Over!
+  <br>
+  Your score is: ${score}
+</div>`;
+  let gameOver = document.querySelector(".game-over");
+  gameOver.style.display = "block";
+}
 let timer = 60;
 function timerFunction() {
   let time = setInterval(function () {
@@ -21,7 +31,7 @@ function timerFunction() {
       let timerRun = document.querySelector("#timer");
       timerRun.textContent = timer;
     } else {
-      alert('Timeout!');
+      gameOver();
       clearInterval(time);
     }
   }, 1000);
@@ -41,7 +51,7 @@ function scoreFunction() {
       randomNumberBubbles();
       hitFunction();
     } else {
-      alert("Game Over");
+      gameOver();
     }
   });
 }
