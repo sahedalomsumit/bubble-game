@@ -106,22 +106,3 @@ body {
     border-radius: 0px;
   }
 }
-<<<<<<< HEAD
-=======
-
-.bubble-box:hover{
-    background-color: cadetblue;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    height: auto;
-  }
-  .main{
-    padding:10px;
-    width: 100%;
-    height:auto;
-    border-radius: 0px;
-  }
-}
->>>>>>> 902b1283d060d5a706fd295d202e26ac89247eea
